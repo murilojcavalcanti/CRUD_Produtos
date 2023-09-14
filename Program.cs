@@ -1,5 +1,12 @@
+using Desafio_IBID.Data;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
+var constring = builder.Configuration.GetConnectionString("Api_Connnection");
+builder.Services.AddDbContext<ProdutoDbContext>(opts => opts.UseMySql(constring,ServerVersion.AutoDetect(constring)));
+
+builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
 // Add services to the container.
 builder.Services.AddControllers();
