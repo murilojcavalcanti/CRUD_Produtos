@@ -18,5 +18,8 @@ namespace Desafio_IBID.Models
 
         [Required]
         public decimal Preco { get; set; }
+
+        [Required]
+        public int Quantidade { get; set; }
     }
 }
