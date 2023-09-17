@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Desafio_IBID</name>
+    </assembly>
+    <members>
+        <member name="M:Desafio_IBID.Controllers.ProdutoController.AdicionaProduto(Desafio_IBID.Data.DTOs.CreateProdutoDTO)">
+            <summary>
+            Adiciona um Produto ao banco de dados
+            </summary>
+            <param name="produtoDto"> Objeto com os campos necessários para criação de um produto</param>
+            <returns>IActionResult</returns>
+            <response code="201">Caso inserção seja feita com sucesso</response>
+        </member>
+        <member name="M:Desafio_IBID.Controllers.ProdutoController.ListaProdutos">
+            <summary>
+            Retorna a lista de produtos adicionados ao banco de dados
+            </summary>
+            <returns>IActionResult</returns>
+            <response code="200">Caso a requisição seja feita com sucesso</response>
+        </member>
+        <member name="M:Desafio_IBID.Controllers.ProdutoController.BuscaProdutoPorId(System.Int32)">
+            <summary>
+            Retorna um produto com o indice escolhido que está no banco de dados
+            </summary>
+            <param name="id"> inteiro usado para buscar o produto com esse indice</param>
+            <returns>IActionResult</returns>
+            <response code="200">Caso a requisição seja feita com sucesso</response>
+        </member>
+        <member name="M:Desafio_IBID.Controllers.ProdutoController.AtualizaProduto(System.Int32,Desafio_IBID.Data.DTOs.UpdateProdutoDTO)">
+            <summary>
+            Atualiza um produto do banco de dados
+            </summary>
+            <param name="id"> inteiro usado para buscar o produto com esse indice</param>
+            <returns>IActionResult</returns>
+            <response code="200">Caso a requisição seja feita com sucesso</response>
+        </member>
+        <member name="M:Desafio_IBID.Controllers.ProdutoController.AtualizaProdutoParcial(System.Int32,Microsoft.AspNetCore.JsonPatch.JsonPatchDocument{Desafio_IBID.Data.DTOs.UpdateProdutoDTO})">
+            <summary>
+            Atualiza um produto do banco de dados de forma parcial
+            </summary>
+            <param name="id"> inteiro usado para buscar o produto com esse indice</param>
+            <returns>IActionResult</returns>
+            <response code="200">Caso a requisição seja feita com sucesso</response>
+        </member>
+        <member name="M:Desafio_IBID.Controllers.ProdutoController.DeletaProduto(System.Int32)">
+            <summary>
+            Remove o produto do banco de dados
+            </summary>
+            <param name="id"> inteiro usado para buscar o produto com esse indice</param>
+            <returns>IActionResult</returns>
+            <response code="204">Caso a requisição seja feita com sucesso</response>
+        </member>
+    </members>
+</doc>

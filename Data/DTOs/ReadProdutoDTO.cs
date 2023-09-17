@@ -4,6 +4,7 @@ namespace Desafio_IBID.Data.DTOs;
 
 public class ReadProdutoDTO
 {
+    public int Id { get; set; }
     public string Nome { get; set; }
     public string descrição { get; set; }
     public decimal Preco { get; set; }

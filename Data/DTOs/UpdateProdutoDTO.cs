@@ -1,13 +1,9 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Desafio_IBID.Models
+namespace Desafio_IBID.Data.DTOs
 {
-    public class Produto
+    public class UpdateProdutoDTO
     {
-
-        [Key]
-        [Required]
-        public int Id { get; set; }
 
         [Required]
         public string Nome { get; set; }
@@ -18,5 +14,6 @@ namespace Desafio_IBID.Models
 
         [Required]
         public decimal Preco { get; set; }
+
     }
 }
